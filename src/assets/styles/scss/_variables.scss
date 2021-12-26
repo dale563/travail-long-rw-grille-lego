@@ -1,0 +1,40 @@
+// palette de couleur 
+$couleur-primaire-fonce:#09001b;
+
+$couleur-primaire-intermediaire:#2c2f7b;
+$couleur-primaire-pale:#189cd9;
+
+$couleur-secondaire-froide:#84bc37;
+$couleur-secondaire-chaude:#f9df17;
+
+$couleur-gris-fonce:#606371;
+$couleur-gris-pale:#cbcbd7;
+
+$couleur-etat-go:#67b32e;
+$couleur-etat-intermediaire:#f6a316;
+$couleur-etat-no-go:#e52421;
+
+$couleur-CTA: white;
+
+$playfairdisplay: 'url("../../fonts/playfairdisplay-variablefont_wght-webfont.woff2") format("woff2"), url("../../fonts/playfairdisplay-variablefont_wght-webfont.woff") format("woff")';
+$opensanslight: 'url("../../fonts/opensans-light-webfont.woff2") format("woff2"), url("../../fonts/opensans-light-webfont.woff") format("woff")';
+$opensanssemibold: 'url("../../fonts/opensans-semibold-webfont.woff2") format("woff2"), url("../../fonts/opensans-semibold-webfont.woff") format("woff")';
+
+$fsp: 1rem; 
+$fsh1: 3rem; 
+$fsh2: 2rem;
+
+$xs-size:475px;
+$sm-size: 675px;
+$m-size: 800px;
+$l-size: 1000px;
+$xl-size: 1400px;
+
+$xs-plus: '(min-width: #{$xs-size})';
+$sm-plus: '(min-width: #{$sm-size})';
+$m-plus: '(min-width: #{$m-size})';
+$l-plus: '(min-width: #{$l-size})';
+$xl-plus: '(min-width: #{$xl-size})';
+
+
+                

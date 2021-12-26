@@ -1,0 +1,822 @@
+header button {
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+header div {
+  display: flex;
+}
+header p {
+  margin: 0;
+}
+header a {
+  color: black;
+}
+header a:hover {
+  color: gray;
+}
+header section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header section:first-child {
+  height: 50px;
+}
+header section:first-child > button {
+  display: none;
+  background-color: #ff6767;
+}
+header section:first-child > button:hover {
+  background-color: #fcc7c7;
+}
+header section:first-child > div, header section:first-child button {
+  margin: 0 15px;
+}
+header section:first-child > div:nth-child(3) {
+  display: none;
+}
+header section:first-child > div:nth-child(2) {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+}
+header section:first-child > div:nth-child(2) p {
+  font-size: 16px;
+  text-align: center;
+}
+header section:last-child {
+  height: 52px;
+}
+header section:last-child img {
+  width: 35px;
+  height: 35px;
+}
+header section:last-child a, header section:last-child svg {
+  color: black;
+  text-decoration: none;
+}
+header section:last-child a:hover, header section:last-child svg:hover {
+  color: gray;
+}
+header section:last-child svg {
+  width: 40px;
+  height: 40px;
+}
+header section:last-child > div:first-child a:nth-child(2) {
+  display: none;
+}
+header section:last-child > div:first-child a:nth-child(3) {
+  display: block;
+}
+header section:last-child #navigation-principale {
+  display: none;
+  flex-grow: 1;
+}
+header section:last-child #navigation-principale button {
+  background-color: #fffeb3;
+}
+header section:last-child #navigation-principale button:hover {
+  background-color: white;
+}
+header section:last-child #navigation-principale ul {
+  grid-column: 1/5;
+  width: 100%;
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+  justify-content: space-around;
+}
+header section:last-child #navigation-principale ul li {
+  flex-grow: 1;
+  text-align: center;
+}
+@media (min-width: 1000px) {
+  header section:last-child #navigation-principale ul {
+    grid-column: 1/4;
+  }
+}
+@media screen and (min-width: 800px) {
+  header section:first-child {
+    height: 55px;
+    background-color: #f0f0f0;
+  }
+  header section:first-child > button {
+    display: block;
+  }
+  header section:first-child > div:nth-child(4) {
+    display: none;
+  }
+  header section:first-child > div:nth-child(3) {
+    display: block;
+  }
+  header section:first-child > div:nth-child(3) a {
+    text-decoration: none;
+  }
+  header section:last-child {
+    background-color: #2c2f7b;
+    height: 75px;
+    padding: 0 10px;
+  }
+  header section:last-child a, header section:last-child svg {
+    color: white;
+  }
+  header section:last-child a#bxs-user, header section:last-child svg#bxs-user {
+    display: none;
+  }
+  header section:last-child img {
+    width: 55px;
+    height: 55px;
+    margin: 0 5px;
+  }
+  header section:last-child svg {
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+  }
+  header section:last-child > div:first-child a:first-child {
+    display: none;
+  }
+  header section:last-child > div:first-child a:nth-child(2) {
+    display: none;
+  }
+  header section:last-child > div:first-child a:nth-child(3) {
+    display: block;
+  }
+  header section:last-child #navigation-principale {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+footer {
+  font-size: 16px;
+  padding: 0 1rem;
+}
+footer section {
+  padding: 1rem 0;
+}
+footer small {
+  font-size: 0.7rem;
+}
+footer a, footer svg {
+  color: white;
+  padding: 0.5rem;
+}
+footer a:hover, footer svg:hover {
+  color: gray;
+}
+footer a {
+  padding: 0.5rem;
+}
+footer #accordeon button {
+  background-color: #2c2f7b;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  border-bottom: solid 1px black;
+  border-top: solid 1px black;
+}
+footer .active, footer #accordeon button:hover {
+  background-color: #189cd9;
+}
+footer .active {
+  border-bottom: none;
+}
+footer #accordeon div {
+  padding: 1.5rem 2rem;
+  display: none;
+  background-color: #189cd9;
+  overflow: hidden;
+  color: white;
+}
+footer #accordeon div h4 {
+  display: none;
+}
+footer #accordeon div a {
+  display: block;
+  padding: 0.5rem 0;
+}
+footer section:first-child div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer section:first-child a {
+  display: block;
+}
+footer section:nth-child(2) p {
+  text-transform: uppercase;
+}
+footer section:nth-child(2) div {
+  margin: 1rem;
+  display: flex;
+}
+footer section:nth-child(2) div input {
+  flex-grow: 1;
+}
+footer section:nth-child(4) h2 {
+  text-transform: uppercase;
+}
+footer section:nth-child(4) svg {
+  margin: 0 5px;
+  width: 50px;
+  height: 50px;
+}
+footer section:nth-child(5) {
+  columns: 2;
+}
+footer section:nth-child(5) a {
+  display: block;
+}
+footer section:last-child {
+  padding: 1rem 0;
+}
+@media screen and (min-width: 675px) {
+  footer div {
+    display: grid;
+    grid-template: repeat(4, auto)/auto auto repeat(4, 1fr);
+    grid-template-areas: "s1 s1 s3 s3 s3 s3" "s2 s2 s2 s4 s4 s4" "s5 s5 s5 s4 s4 s4" "s6 s6 s6 s6 s6 s6";
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  footer section:first-child {
+    grid-area: s1;
+    place-self: center center;
+    padding-top: 0;
+  }
+  footer section:first-child > div {
+    display: block;
+  }
+  footer section:first-child > div div {
+    justify-content: start;
+  }
+  footer section:nth-child(2) {
+    grid-area: s2;
+  }
+  footer section:nth-child(2) p {
+    padding-right: 2rem;
+  }
+  footer section:nth-child(2) input {
+    flex-grow: 0 !important;
+  }
+  footer #accordeon {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-area: s3;
+    overflow-x: auto;
+  }
+  footer #accordeon div {
+    padding: 1rem 0.5rem;
+    font-size: 0.9rem;
+    display: block !important;
+    background-color: #2c2f7b;
+  }
+  footer #accordeon h4 {
+    display: block !important;
+    text-transform: uppercase;
+  }
+  footer #accordeon button {
+    display: none;
+  }
+  footer section:nth-child(4) {
+    grid-area: s4;
+    place-self: center center;
+  }
+  footer section:nth-child(5) {
+    grid-area: s5;
+  }
+  footer section:nth-child(6) {
+    grid-area: s6;
+  }
+}
+
+@font-face {
+  font-family: Grand-titre;
+  src: url("../../fonts/palermo-medium-webfont.woff2") format("woff2"), url("../../fonts/palermo-medium-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: Titre-1-2;
+  src: url("../../fonts/playfairdisplay-variablefont_wght-webfont.woff2") format("woff2"), url("../../fonts/playfairdisplay-variablefont_wght-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: Sous-titre-1;
+  src: url("../../fonts/playfairdisplay-variablefont_wght-webfont.woff2") format("woff2"), url("../../fonts/playfairdisplay-variablefont_wght-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: texte-1;
+  src: url("../../fonts/opensans-light-webfont.woff2") format("woff2"), url("../../fonts/opensans-light-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: Sous-titre2;
+  src: url("../../fonts/opensans-semibold-webfont.woff2") format("woff2"), url("../../fonts/opensans-semibold-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: texte2;
+  src: url("../../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../../fonts/opensans-regular-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: media-sociaux;
+  src: url("../../fonts/icones/social_media_circled-webfont.woff2") format("woff2"), url("../../fonts/icones/social_media_circled-webfont.woff") format("woff");
+}
+html, body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: texte-2;
+}
+@media screen and (min-width: 675px) {
+  html, body {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 800px) {
+  html, body {
+    font-size: 20px;
+  }
+}
+html h2, body h2 {
+  font-family: Titre-1-2;
+}
+html h3, html h4, body h3, body h4 {
+  font-family: Sous-titre2;
+}
+
+footer {
+  background-color: #2c2f7b;
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.favori, .nouveaute {
+  font-size: 2rem;
+}
+
+.nouveaute {
+  color: red;
+}
+
+main {
+  margin: auto;
+  padding: 0;
+  max-width: 1600px;
+}
+main a {
+  color: black;
+  text-decoration: underline 0.1px black;
+  transition-duration: 1s;
+  transform-origin: left;
+}
+main a:hover {
+  transition-duration: 1s;
+  transform: scale(1.1);
+}
+main h1, main h2 {
+  font-size: 2.5rem;
+}
+main h3 {
+  font-size: 1rem;
+}
+main section {
+  width: 100%;
+}
+main section div {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+main section:first-child, main section:nth-child(6) {
+  margin: 0;
+  display: grid;
+  overflow-x: hidden;
+}
+main section:first-child div, main section:nth-child(6) div {
+  z-index: 1;
+  place-self: center center;
+  display: block;
+  width: auto;
+}
+main section:first-child div button, main section:nth-child(6) div button {
+  border-radius: 5px;
+  padding: 0.8rem;
+  background-color: #2c2f7b;
+  color: white;
+  width: auto;
+  font-size: 1rem;
+}
+main section:first-child div button:hover, main section:nth-child(6) div button:hover {
+  background-color: #189cd9;
+}
+main section:first-child img, main section:nth-child(6) img {
+  width: auto;
+  min-width: 100%;
+  filter: brightness(1.1);
+}
+main section:first-child {
+  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+}
+main section:first-child div {
+  grid-area: 1/2/2/3;
+  background-color: rgba(255, 255, 255, 0.137);
+  padding: 1rem;
+  border-radius: 7.5px;
+}
+main section:first-child div h1 {
+  margin: 0 0 1.5rem 0;
+  font-size: 2rem;
+}
+@media screen and (min-width: 1200px) {
+  main section:first-child div {
+    padding: 1.5rem;
+  }
+  main section:first-child div h1 {
+    font-size: 3rem;
+    margin: 0 0 1.5rem 0;
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1400px) {
+  main section:first-child div h1 {
+    font-size: 4rem;
+  }
+}
+main section:first-child img {
+  grid-area: 1/1/3/3;
+  height: 320px;
+  transform: translatex(-15%);
+}
+@media screen and (min-width: 600px) {
+  main section:first-child img {
+    width: 100%;
+    height: auto;
+    transform: translatex(0%);
+  }
+}
+main section:nth-child(6) {
+  grid-template: 1fr/repeat(3, 1fr);
+}
+main section:nth-child(6) img {
+  grid-area: 1/1/2/4;
+  height: 120px;
+  transform: translatex(-15%);
+}
+@media screen and (min-width: 475px) {
+  main section:nth-child(6) img {
+    transform: translatex(-5%);
+  }
+}
+@media screen and (min-width: 475px) and (min-width: 600px) {
+  main section:nth-child(6) img {
+    transform: translatex(0%);
+    width: 100%;
+    height: auto;
+  }
+}
+main section:nth-child(6) div {
+  grid-area: 1/1/2/4;
+  color: white;
+}
+main section:nth-child(6) div h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+  padding: 0.25rem;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+@media screen and (min-width: 475px) {
+  main section:nth-child(6) div {
+    grid-area: 1/2/2/4;
+  }
+}
+@media screen and (min-width: 475px) and (min-width: 1000px) {
+  main section:nth-child(6) div {
+    background-color: rgba(0, 0, 0, 0.24);
+    padding: 1rem;
+    border-radius: 7.5px;
+  }
+  main section:nth-child(6) div button {
+    font-size: 1.2rem;
+  }
+  main section:nth-child(6) div h2 {
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 475px) and (min-width: 1000px) and (min-width: 1200px) {
+  main section:nth-child(6) div {
+    padding: 1rem;
+  }
+  main section:nth-child(6) div button {
+    font-size: 1.5rem;
+  }
+  main section:nth-child(6) div h2 {
+    margin-bottom: 1.2rem;
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 475px) and (min-width: 1000px) and (min-width: 1200px) and (min-width: 1400px) {
+  main section:nth-child(6) div {
+    padding: 1.5rem;
+  }
+  main section:nth-child(6) div h2 {
+    font-size: 3rem;
+  }
+}
+main section:nth-child(2) {
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main section:nth-child(2) div {
+  background-color: rgba(212, 212, 212, 0.575);
+  border-radius: 5px;
+  max-width: 70px;
+  padding: 0.3rem;
+  margin: 5px;
+  transform-origin: bottom;
+}
+main section:nth-child(2) div img {
+  width: 100%;
+  border-radius: 5px;
+}
+main section:nth-child(2) div a {
+  padding-top: 0.2rem;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.7rem;
+}
+main section:nth-child(2) div a:hover {
+  transform: none;
+}
+main section:nth-child(2) div:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+main section:nth-child(3) h2, main section:last-child h2 {
+  margin: 0.5rem 1.5rem;
+}
+main section:nth-child(3) > img, main section:last-child > img {
+  display: none;
+}
+main section:nth-child(3) > div, main section:last-child > div {
+  flex-direction: row;
+  align-items: baseline;
+  overflow-x: auto;
+  align-items: stretch;
+}
+main section:nth-child(3) > div img, main section:last-child > div img {
+  width: 70vw;
+}
+main section:nth-child(3) > div > button, main section:last-child > div > button {
+  margin: auto;
+  padding: 0.5rem 0.5rem 0;
+  font-size: 1.5rem;
+  color: rgba(170, 170, 170, 0.2);
+  border: solid 3px rgba(170, 170, 170, 0.2);
+  background-color: rgba(170, 170, 170, 0.021);
+  display: none;
+  flex-shrink: 1;
+  border-radius: 50%;
+}
+main section:nth-child(3) > div > button:hover, main section:last-child > div > button:hover {
+  transition-duration: 0.5s;
+  color: rgba(170, 170, 170, 0.7);
+  border-color: rgba(170, 170, 170, 0.7);
+  background-color: rgba(170, 170, 170, 0.164);
+}
+main section:nth-child(3) > div > button:first-child, main section:last-child > div > button:first-child {
+  opacity: 0;
+  cursor: default;
+}
+main section:nth-child(3) > div h3, main section:last-child > div h3 {
+  flex-grow: 1;
+}
+main section:nth-child(3) > div > div, main section:last-child > div > div {
+  box-sizing: border-box;
+  padding: 0.5rem;
+  border: solid rgba(128, 128, 128, 0.199) 2px;
+  border-radius: 5px;
+  box-shadow: -1.5px -1.5px rgba(126, 126, 126, 0.164);
+  margin: 0.5rem 1.5rem;
+}
+main section:nth-child(3) > div > div:hover, main section:last-child > div > div:hover {
+  transition-duration: 0.5s;
+  border-color: rgba(128, 128, 128, 0.336);
+  box-shadow: 1.5px -1.5px rgba(126, 126, 126, 0.564);
+}
+main section:nth-child(3) > div > div h3 svg, main section:last-child > div > div h3 svg {
+  color: red;
+}
+main section:nth-child(3) > div > div h3 svg:hover, main section:last-child > div > div h3 svg:hover {
+  cursor: pointer;
+}
+main section:nth-child(3) > div > div p, main section:last-child > div > div p {
+  margin: 0;
+  padding: 0 0 0.5rem 0;
+}
+main section:nth-child(3) > div > div > div, main section:last-child > div > div > div {
+  margin: 0 0 0.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main section:nth-child(3) > div > div > div button, main section:last-child > div > div > div button {
+  width: 100%;
+  border-radius: 5px;
+  padding: 0.8rem;
+  background-color: #2c2f7b;
+  color: white;
+}
+main section:nth-child(3) > div > div > div button:hover, main section:last-child > div > div > div button:hover {
+  background-color: #189cd9;
+}
+main section:last-child img {
+  filter: brightness(1.3) contrast(120%);
+}
+main section:nth-child(4), main section:nth-child(5) {
+  box-sizing: border-box;
+  padding: 20px;
+}
+main section:nth-child(4) img, main section:nth-child(5) img {
+  width: 100%;
+}
+main section:nth-child(4) > div, main section:nth-child(5) > div {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  border: solid rgba(128, 128, 128, 0.199) 2px;
+  border-radius: 5px;
+  box-shadow: -1.5px -1.5px rgba(126, 126, 126, 0.164);
+}
+main section:nth-child(4) > div:hover, main section:nth-child(5) > div:hover {
+  transition-duration: 0.5s;
+  border-color: rgba(128, 128, 128, 0.336);
+  box-shadow: 1.5px -1.5px rgba(126, 126, 126, 0.564);
+}
+@media screen and (min-width: 675px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 16px;
+  }
+  main .favori, main .nouveaute {
+    font-size: 1rem;
+  }
+  main section {
+    grid-column: 1/13;
+  }
+  main section:first-child, main section:nth-child(6) {
+    margin: 0;
+    display: grid;
+  }
+  main section:first-child div, main section:nth-child(6) div {
+    z-index: 1;
+    place-self: center center;
+    display: block;
+  }
+  main section:first-child div button, main section:nth-child(6) div button {
+    border-radius: 5px;
+    padding: 0.8rem;
+    background-color: #2c2f7b;
+    color: white;
+    width: auto;
+    font-size: 1rem;
+  }
+  main section:first-child div button:hover, main section:nth-child(6) div button:hover {
+    background-color: #189cd9;
+  }
+  main section:nth-child(2) div {
+    max-width: 90px;
+  }
+  main section:nth-child(3), main section:last-child {
+    justify-content: space-between;
+    display: grid;
+    grid-template: repeat(3, auto)/auto repeat(10, 1fr) auto;
+  }
+  main section:nth-child(3) h2, main section:last-child h2 {
+    grid-area: 1/3/2/13;
+    margin: 2rem 0 1rem;
+  }
+  main section:nth-child(3) button:first-child, main section:last-child button:first-child {
+    grid-area: 1/1/3/2;
+  }
+  main section:nth-child(3) button:last-child, main section:last-child button:last-child {
+    grid-area: 1/12/3/13;
+  }
+  main section:nth-child(3) > img, main section:last-child > img {
+    grid-area: 3/5/4/9;
+    display: block;
+    margin-bottom: 10px;
+  }
+  main section:nth-child(3) > div, main section:last-child > div {
+    grid-area: 2/2/3/12;
+    justify-content: space-between;
+  }
+  main section:nth-child(3) > div > button, main section:last-child > div > button {
+    display: block;
+  }
+}
+@media screen and (min-width: 675px) and (min-width: 1000px) {
+  main section:nth-child(3) > div > button, main section:last-child > div > button {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 675px) {
+  main section:nth-child(3) > div img, main section:last-child > div img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 675px) {
+  main section:nth-child(3) > div > div, main section:last-child > div > div {
+    margin: 0.5rem;
+  }
+}
+@media screen and (min-width: 675px) and (min-width: 1400px) {
+  main section:nth-child(3) > div > div, main section:last-child > div > div {
+    margin: 0.5rem 1.5rem;
+  }
+}
+@media screen and (min-width: 675px) {
+  main section:nth-child(3) > div > div p, main section:last-child > div > div p {
+    margin: 0;
+    padding: 0 0 0.5rem 0;
+  }
+}
+@media screen and (min-width: 675px) {
+  main section:nth-child(3) > div > div > div, main section:last-child > div > div > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 675px) {
+  main section:nth-child(3) > img, main section:last-child > img {
+    width: 100%;
+    height: 10px;
+  }
+}
+@media screen and (min-width: 675px) {
+  main section:nth-child(4), main section:nth-child(5) {
+    grid-column: 2/12;
+    grid-gap: 1rem;
+    display: grid;
+  }
+  main section:nth-child(4) > h2, main section:nth-child(5) > h2 {
+    margin: 2rem 0 0.3rem;
+  }
+}
+@media screen and (min-width: 675px) {
+  main section:nth-child(4) {
+    grid-template: auto 1fr/repeat(3, 1fr);
+  }
+  main section:nth-child(4) > div p {
+    height: 100%;
+  }
+  main section:nth-child(4) > h2 {
+    grid-area: 1/1/2/5;
+  }
+  main section:nth-child(4) > div:first-child {
+    grid-area: 2/1/3/2;
+  }
+  main section:nth-child(4) > div:nth-child(2) {
+    grid-area: 2/2/3/3;
+  }
+  main section:nth-child(4) > div:last-child {
+    grid-area: 2/3/3/4;
+  }
+}
+@media screen and (min-width: 675px) {
+  main section:nth-child(5) {
+    grid-template: auto 1fr/repeat(4, 1fr);
+  }
+  main section:nth-child(5) > div h3 {
+    height: 100%;
+  }
+  main section:nth-child(5) > h2 {
+    grid-area: 1/1/2/5;
+  }
+  main section:nth-child(5) > div:first-child {
+    grid-area: 2/1/3/2;
+  }
+  main section:nth-child(5) > div:nth-child(2) {
+    grid-area: 2/2/3/3;
+  }
+  main section:nth-child(5) > div:nth-child(3) {
+    grid-area: 2/3/3/4;
+  }
+  main section:nth-child(5) > div:last-child {
+    grid-area: 2/4/3/5;
+  }
+}

@@ -1,0 +1,42 @@
+@use 'variables';
+// Palermo medium – Grand titre / identité :
+// Seul ou avec une devise de la police Open sans light (texte1 ou sous-titre2 en l'occurence).
+// Obligatoirement avec une police sans empâtement.
+
+@font-face {
+    font-family: Grand-titre;
+    src: url("../../fonts/palermo-medium-webfont.woff2") format("woff2"),
+         url("../../fonts/palermo-medium-webfont.woff") format("woff");
+  }
+
+@font-face {
+    font-family: Titre-1-2;
+    src: #{variables.$playfairdisplay};
+  }
+
+@font-face {
+    font-family: Sous-titre-1;
+    src: #{variables.$playfairdisplay};
+  }
+
+@font-face {
+    font-family: texte-1;
+    src: #{variables.$opensanslight};
+  }
+
+@font-face {
+    font-family: Sous-titre2;
+    src: #{variables.$opensanssemibold};
+  }
+
+@font-face {
+    font-family: texte2;
+    src: url("../../fonts/opensans-regular-webfont.woff2") format("woff2"),
+         url("../../fonts/opensans-regular-webfont.woff") format("woff");
+  }
+
+@font-face {
+    font-family: media-sociaux;
+    src: url("../../fonts/icones/social_media_circled-webfont.woff2") format("woff2"),
+         url("../../fonts/icones/social_media_circled-webfont.woff") format("woff");
+  }

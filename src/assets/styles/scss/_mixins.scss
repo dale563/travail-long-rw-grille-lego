@@ -1,0 +1,48 @@
+@use 'variables';
+
+@mixin forme-cartes {  
+    box-sizing: border-box;
+    padding:0.5rem;
+    border: solid rgba(128, 128, 128, 0.199) 2px;
+    border-radius: 5px;
+    box-shadow: -1.5px -1.5px rgba(126, 126, 126, 0.164);
+    &:hover{
+        transition-duration: 0.5s;
+        border-color: rgba(128, 128, 128, 0.336);
+        box-shadow: 1.5px -1.5px rgba(126, 126, 126, 0.564);      
+    }
+}
+
+@mixin boutons-panier {
+    width: 100%;
+    border-radius: 5px;
+    padding: 0.8rem;
+    background-color: variables.$couleur-primaire-intermediaire;
+    color:white;
+    &:hover{
+        background-color: variables.$couleur-primaire-pale;
+    }
+}
+
+@mixin boutons-annonces {
+    border-radius: 5px;
+    padding: 0.8rem;
+    background-color: variables.$couleur-primaire-intermediaire;
+    color:white;
+    &:hover{
+        background-color: variables.$couleur-primaire-pale;
+    }
+}
+
+@mixin forme-i-information {
+    color:red;
+    &:hover {
+        cursor:pointer;
+    }
+}
+@mixin forme-coeur {
+    color:red;
+    &:hover {
+        cursor:pointer;
+    }
+}
